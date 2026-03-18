@@ -1,0 +1,308 @@
+:root {
+    --color-0: rgb(255, 255, 255);
+    --color-1: rgb(201, 181, 156);
+    --color-2: rgb(217, 207, 199);
+    --color-3: rgba(239, 233, 227, 0.8);
+    --color-4: rgba(249, 248, 246, 0.8);
+    --text-1-clr: rgb(69, 40, 41);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ═══════════════════════════════════════════
+   WRAPPER
+═══════════════════════════════════════════ */
+.properties-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+}
+
+/* ═══════════════════════════════════════════
+   PROPERTY CARDS
+═══════════════════════════════════════════ */
+.slide1,
+.slide2,
+.slide3 {
+    box-sizing: border-box;
+    border: 3px solid var(--color-1);
+    width: 30%;
+    min-width: 280px;
+    padding-top: 0;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-3);
+    box-shadow: 0 4px 16px rgba(201, 181, 156, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slide1:hover,
+.slide2:hover,
+.slide3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(201, 181, 156, 0.45);
+}
+
+/* ═══════════════════════════════════════════
+   APARTMENT HEADINGS
+═══════════════════════════════════════════ */
+.apt-name1,
+.apt-name2,
+.apt-name3 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-1-clr);
+    padding: 0 12px;
+}
+
+/* ═══════════════════════════════════════════
+   AMENITIES
+═══════════════════════════════════════════ */
+.p1 {
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-1-clr);
+}
+
+.ul-properties {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ul-properties li {
+    font-size: 14px;
+    color: var(--text-1-clr);
+    padding: 2px 0;
+}
+
+.ul-properties li:hover {
+    cursor: pointer;
+    text-decoration: underline var(--color-2);
+}
+
+/* ═══════════════════════════════════════════
+   APT INFO
+═══════════════════════════════════════════ */
+.apt-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.apt-info p {
+    font-size: 13px;
+    color: var(--text-1-clr);
+    text-align: center;
+    margin: 4px 0;
+}
+
+/* ═══════════════════════════════════════════
+   LOCATION LINK
+═══════════════════════════════════════════ */
+.p2-link {
+    text-decoration: none;
+    color: var(--text-1-clr);
+}
+
+.p2-link:hover {
+    text-decoration: underline var(--color-1);
+    cursor: pointer;
+}
+
+/* ═══════════════════════════════════════════
+   SLIDESHOW
+═══════════════════════════════════════════ */
+.mySlides1,
+.mySlides2,
+.mySlides3 {
+    display: none;
+}
+
+.slide1 img,
+.slide2 img,
+.slide3 img {
+    position: relative;
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+/* ═══════════════════════════════════════════
+   ARROWS
+═══════════════════════════════════════════ */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 14px;
+    color: #fff;
+    background-color: rgba(44, 62, 80, 0.35);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+    user-select: none;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.prev { left: 4px; }
+.next { right: 4px; }
+
+.prev:hover,
+.next:hover {
+    background-color: var(--color-1);
+    color: #fff;
+}
+
+/* ═══════════════════════════════════════════
+   BOOK + PRICE
+═══════════════════════════════════════════ */
+.book-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.price-tag {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    background-color: var(--color-2);
+    padding: 8px 14px;
+    border-radius: 50px;
+    cursor: default;
+}
+
+.price-tag span:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+.book-price button {
+    background-color: var(--color-1);
+    color: var(--color-0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.book-price button:hover {
+    background-color: var(--text-1-clr);
+    transform: translateY(-1px);
+}
+
+/* ═══════════════════════════════════════════
+   DB PROPERTIES SECTION
+═══════════════════════════════════════════ */
+.db-properties-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin: 30px 0 10px;
+    letter-spacing: 0.3px;
+}
+
+.no-image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-2);
+    color: var(--text-1-clr);
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ═══════════════════════════════════════════
+   TABLET
+═══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .slide1,
+    .slide2,
+    .slide3 {
+        width: 45%;
+    }
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE
+═══════════════════════════════════════════ */
+@media (max-width: 600px) {
+    .properties-wrapper {
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3 {
+        width: 100%;
+        min-width: unset;
+        border-radius: 16px;
+    }
+
+    .slide1 img,
+    .slide2 img,
+    .slide3 img {
+        height: 220px !important;
+        object-fit: cover;
+    }
+
+    .apt-name1,
+    .apt-name2,
+    .apt-name3 {
+        font-size: 16px;
+    }
+
+    .db-properties-title {
+        font-size: 24px;
+    }
+
+    .book-price {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,192 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --color-0: rgb(255, 255, 255);
+    --color-1: rgb(201, 181, 156);
+    --color-2: rgb(217, 207, 199);
+    --color-3: rgba(239, 233, 227, 0.8);
+    --color-4: rgba(249, 248, 246, 0.8);
+    --text-1-clr: rgb(69, 40, 41);
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-1-clr);
+}
+
+/* ================= NAVBAR ================= */
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-4);
+  padding: 0 16px;
+  position: relative;
+  border-bottom: solid 1px var(--color-1);
+}
+
+/* ================= SECTIONS ================= */
+.left-side,
+.center-side,
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+/* ================= LEFT SIDE ================= */
+.left-side img {
+  margin-right: 10px;
+}
+
+.left-side a {
+  font-weight: bold;
+  color: var(--text-1-clr);
+  text-decoration: none;
+}
+
+.left-side span {
+  font-size: 32px;
+}
+
+/* ================= CENTER LINKS ================= */
+.center-side a {
+  margin: 0 12px;
+}
+
+/* ================= ALL LINKS ================= */
+.topnav a {
+  color: var(--text-1-clr);
+  text-decoration: none;
+  padding: 14px 10px;
+  font-size: 20px;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.topnav a:hover {
+  color: var(--color-1);
+  transform: scale(1.1);
+}
+
+span:hover {
+  color: var(--color-1);
+}
+
+/* ================= RIGHT SIDE ================= */
+.right-side i {
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.right-side a {
+  font-size: 20px;
+}
+
+.right-side i:hover {
+  color: var(--color-1);
+}
+
+/* ================= ICON BUTTON (logout) ================= */
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--text-1-clr);
+  cursor: pointer;
+  padding: 14px 10px;
+  transition: color 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: var(--color-1);
+}
+
+/* ================= HAMBURGER ================= */
+.icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: var(--text-1-clr);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--color-1);
+}
+
+/* ================= PROFILE LINK ================= */
+.profile-link::after {
+  content: "";
+}
+
+.profile-link i:hover {
+  color: var(--color-1);
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 768px) {
+
+  .center-side {
+    display: none;
+  }
+
+  .right-side a {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  /* ===== OPEN STATE ===== */
+  .topnav.responsive {
+    flex-direction: column;
+    align-items: center; /* ← centered */
+  }
+
+  .topnav.responsive .center-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ← centered */
+    width: 100%;
+  }
+
+  .topnav.responsive .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ← centered */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    width: 100%;
+    text-align: center; /* ← centered */
+  }
+
+  .topnav.responsive .icon-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .topnav.responsive .profile-link {
+    display: flex;
+    justify-content: center; /* ← centered */
+    align-items: center;
+  }
+
+  .topnav.responsive .profile-link::after {
+    content: " Login or Signup";
+    margin-left: 8px;
+    font-size: 16px;
+    color: var(--text-1-clr);
+  }
+}

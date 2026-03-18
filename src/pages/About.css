@@ -1,0 +1,247 @@
+main {
+    padding: 60px 20px 20px;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION TOP — About
+═══════════════════════════════════════════ */
+.Section-top {
+    margin-bottom: 60px;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-about {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--color-1);
+    box-shadow: 0 8px 32px rgba(201, 181, 156, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-position: center; /* ← try adjusting this */
+    object-fit: contain;
+}
+
+.logo-about:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 40px rgba(201, 181, 156, 0.6);
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.about-right h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin: 0 0 8px 0;
+    letter-spacing: 0.5px;
+}
+
+.about-right p {
+    font-size: 16px;
+    color: var(--text-1-clr);
+    line-height: 1.8;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.about-right span {
+    font-weight: 700;
+    color: var(--text-1-clr);
+}
+
+/* ═══════════════════════════════════════════
+   SECTION MIDDLE — Facts
+═══════════════════════════════════════════ */
+.Section-middle {
+    margin-bottom: 60px;
+}
+
+.facts-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.facts-card {
+    background-color: var(--color-3);
+    border: 2px solid var(--color-1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 28px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.facts-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(201, 181, 156, 0.4);
+}
+
+.facts-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin: 0;
+}
+
+.facts-desc {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0 8px;
+}
+
+/* ═══════════════════════════════════════════
+   SECTION BOTTOM — Maps
+═══════════════════════════════════════════ */
+.Section-bottom {
+    margin-bottom: 40px;
+}
+
+.locations-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin-bottom: 24px;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+
+.main-locations {
+    width: 100%;
+}
+
+.maps-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 90%;
+    margin: 0 auto 20px;
+}
+
+.map-container {
+    flex: 1;
+    border: 2px solid var(--color-1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(201, 181, 156, 0.3);
+    transition: box-shadow 0.2s ease;
+}
+
+.map-container:hover {
+    box-shadow: 0 8px 28px rgba(201, 181, 156, 0.45);
+}
+
+.map-label {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-1-clr);
+    padding: 14px;
+    margin: 0;
+    background-color: var(--color-3);
+    letter-spacing: 0.3px;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-about {
+        gap: 30px;
+    }
+
+    .about-right h3 {
+        font-size: 34px;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Maps stack */
+@media (max-width: 768px) {
+    .main-about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maps-wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .about-right h3 {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    main {
+        padding: 30px 16px 16px;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-title,
+    .locations-title {
+        font-size: 24px;
+    }
+
+    .about-right h3 {
+        font-size: 26px;
+    }
+
+    .about-right p {
+        font-size: 15px;
+    }
+
+    .logo-about {
+        width: 180px;
+    }
+}

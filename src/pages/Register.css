@@ -1,0 +1,96 @@
+.register {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.register h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-1-clr);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+/* ─── Form ──────────────────────────────────────────────────── */
+.register-form {
+    background-color: var(--color-3);
+    border: 2px solid var(--color-1);
+    border-radius: 24px;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 24px rgba(201, 181, 156, 0.3);
+}
+
+/* ─── Inputs ────────────────────────────────────────────────── */
+.register-form input {
+    padding: 10px 14px;
+    border: 2px solid var(--color-2);
+    border-radius: 10px;
+    background-color: var(--color-0);
+    color: var(--text-1-clr);
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s ease;
+    width: 100%;
+}
+
+.register-form input:focus {
+    border-color: var(--color-1);
+}
+
+/* ─── Register Button ───────────────────────────────────────── */
+.register-form button {
+    background-color: var(--color-1);
+    color: var(--color-0);
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-top: 4px;
+}
+
+.register-form button:hover {
+    background-color: var(--text-1-clr);
+    transform: translateY(-1px);
+}
+
+/* ─── Login link ────────────────────────────────────────────── */
+.register p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #888;
+}
+
+.register p a {
+    color: var(--text-1-clr);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register p a:hover {
+    text-decoration: underline var(--color-1);
+}
+
+/* ─── Mobile ────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    .register-form {
+        padding: 24px 16px;
+    }
+
+    .register h2 {
+        font-size: 22px;
+    }
+}
