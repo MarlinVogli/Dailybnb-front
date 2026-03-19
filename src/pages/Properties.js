@@ -1,22 +1,6 @@
 import "./Properties.css";
 import { useState, useEffect } from "react";
 import API from "../api";
-import ImgD1 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1349-HDR_Original.jpg";
-import ImgD2 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1356_Original.jpg";
-import ImgD3 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1361-HDR_Original.jpg";
-import ImgD4 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1372_Original 2.jpg";
-import ImgD5 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1390_Original.jpg";
-import ImgD6 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1394_Original.jpg";
-import ImgB1 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6507-HDR_Original.jpg";
-import ImgB2 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6510-HDR_Original.jpg";
-import ImgB3 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6516-HDR_Original.jpg";
-import ImgB4 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6524_Original.jpg";
-import ImgB5 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6528-HDR_Original.jpg";
-import ImgB6 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6540_Original.jpg";
-import Qndr1 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/IMG_2248_edited_Original 2.jpg";
-import Qndr2 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/IMG_2242_edited_Original.jpg";
-import Qndr3 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/IMG_2222_edited_Original 2.jpg";
-import Qndr4 from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/GOPR7327_edited_Original 2.jpg";
 
 function Properties() {
 

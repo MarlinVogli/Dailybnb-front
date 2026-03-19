@@ -1,9 +1,6 @@
-import Img9kt1 from '/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/IMG_2242_edited_Original.jpg';
-import ImgB1 from '/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_6524_Original.jpg';
-import ImgD1 from '/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/DSC_1349-HDR_Original.jpg';
-import ImgWTT from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/wtt.jpg";
-import ImgANS from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/albaniannightshow.jpg";
-import ImgBovilla from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/bovilla.webp";
+import ImgWTT from '../assets/wtt.jpg';
+import ImgANS from '../assets/albaniannightshow.jpg';
+import ImgBovilla from '../assets/bovilla.webp';
 import "./Home.css";
 import { useNavigate } from "react-router-dom"; // ← add this
 
@@ -16,21 +13,21 @@ function Home(){
 
       <section className="section1">
         <div className="Card1">
-          <img src={Img9kt1} alt="Heart of the City" />
+          <img alt="Heart of the City" />
           <h3 className="hdng1">Heart of the City</h3>
           <p className="p1">Apartment located in the city Center.</p>
           <button className="primary-button" onClick={() => navigate('/properties')}>View Property</button>
         </div>
 
         <div className="Card2">
-          <img src={ImgB1} alt="Bright Apartment" />
+          <img alt="Bright Apartment" />
           <h3 className="hdng1">Bright Apartment</h3>
           <p className="p1">Spacious apartment just 15 minute walk from city center.</p>
           <button className="primary-button" onClick={() => navigate('/properties')}>View Property</button>
         </div>
 
         <div className="Card3">
-          <img src={ImgD1} alt="Unbeatable Location" />
+          <img alt="Unbeatable Location" />
           <h3 className="hdng1">Unbeatable Location</h3>
           <p className="p1">Apartment located in a quite neighborhood.</p>
           <button className="primary-button" onClick={() => navigate('/properties')}>View Property</button>
