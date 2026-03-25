@@ -1,5 +1,5 @@
 import "./Guides.css";
-import ImgBerat from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/berati.jpg";
+import ImgBerat from "../assets/berati.jpg";
 import ImgGjirokaster from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/gjirokastra.avif";
 import ImgKruja from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/kruja.jpg";
 import ImgBovilla from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/bovilla.webp";
