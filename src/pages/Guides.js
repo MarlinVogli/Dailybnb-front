@@ -1,10 +1,10 @@
 import "./Guides.css";
 import ImgBerat from "../assets/berati.jpg";
-import ImgGjirokaster from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/gjirokastra.avif";
-import ImgKruja from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/kruja.jpg";
-import ImgBovilla from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/bovilla.webp";
-import ImgANS from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/albaniannightshow.jpg";
-import ImgWTT from "/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/wtt.jpg";
+import ImgGjirokaster from "../assets/gjirokastra.avif";
+import ImgKruja from "../assets/kruja.jpg";
+import ImgBovilla from "../assets/bovilla.webp";
+import ImgANS from "../assets/albaniannightshow.jpg";
+import ImgWTT from "../assets/wtt.jpg";
 
 const guides = [
   {
