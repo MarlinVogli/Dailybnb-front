@@ -1,4 +1,4 @@
-import Img from '/Users/marlinvogli/Desktop/React JS/dailybnb/FrontEnd/src/assets/Staycation copy.svg';
+import Img from '../assets/Staycation copy.svg';
 import "./About.css";
 
 const facts = [
